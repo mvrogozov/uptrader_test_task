@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <title>
+      {% block title %}
+        Menu
+      {% endblock title %}
+    </title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        {% include 'includes/header.html' %}      
+      </header>
+      <main class="main-content">
+        {% block content %}
+        {% endblock content %}
+      </main>
+      <footer class="footer border-top text-center py-3">
+        {% include 'includes/footer.html' %}
+      </footer>
+    </div>
+  </body>
+</html>

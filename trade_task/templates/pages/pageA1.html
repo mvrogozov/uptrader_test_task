@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load user_filter %}
+{% block title %}A1 Page{% endblock title %}
+
+{% block content %}
+  <div class="content-block">
+    <h3>This is A1 page</h3>
+    <p>Content of A1 page goes here...</p>
+    <div class="menu-container">
+      {% draw_menu 'A' %}
+    </div>
+  </div>
+{% endblock content %}

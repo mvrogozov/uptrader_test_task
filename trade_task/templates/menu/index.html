@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}menu{% endblock title %}
+
+{% block content %}
+{% load user_filter %}
+
+<body>
+<h3>this is index html</h3>
+<p> {% draw_menu 'A' %}
+</body>
+{% endblock content %}

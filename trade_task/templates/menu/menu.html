@@ -1,0 +1,14 @@
+<ul class="menu">
+  {% for item in items %}
+    <li class="menu-item {% if current_url == item.url %}active{% endif %} {% if item.fields %}has-children{% endif %}">
+      <a href="{% url 'menu:dynamic_page' item.url %}" class="menu-link">
+        {{ item.title }}
+      </a>
+      {% if item.fields %}
+        <ul class="submenu">
+          {% include "menu/menu.html" with items=item.fields %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
