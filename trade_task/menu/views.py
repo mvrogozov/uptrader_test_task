@@ -20,5 +20,5 @@ class DynamicPageView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['current_url'] = self.kwargs.get('page_name', '')
+        context['current_url'] = self.request.path
         return context

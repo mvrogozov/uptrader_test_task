@@ -4,11 +4,11 @@
    "fields":[
       {
          "title":"A1",
-         "url":"pageA1",
+         "url":"menu:dynamic_page pageA1",
          "fields":[
             {
                "title":"A11",
-               "url":"pageA11",
+               "url":"menu:dynamic_page pageA11",
                "fields":[
                   
                ]
@@ -20,6 +20,13 @@
                   {
                      "title":"A121",
                      "url":"pageA121",
+                     "fields":[
+                        
+                     ]
+                  },
+                  {
+                     "title":"переход на menu:index",
+                     "url":"menu:index",
                      "fields":[
                         
                      ]
